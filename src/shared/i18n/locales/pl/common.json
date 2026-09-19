@@ -1,0 +1,72 @@
+{
+  "brand": {
+    "name": "Stolmal Format",
+    "tagline": "Natura i precyzja"
+  },
+  "common": {
+    "orderNow": "Zamów teraz"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "process": "Jak to działa",
+    "gallery": "Galeria",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Meble z drewna tworzone z pasją",
+    "subtitle": "Stoły, krzesła i meble na wymiar — z litego drewna, ręcznie wykańczane w naszej pracowni.",
+    "cta": "Zobacz realizacje"
+  },
+  "footer": {
+    "about": "Stolmal Format — pracownia stolarska specjalizująca się w meblach z litego drewna: stoły, krzesła i realizacje na wymiar.",
+    "navigation": "Nawigacja",
+    "contact": "Kontakt",
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "contactSection": {
+    "eyebrow": "Skontaktuj się",
+    "title": "Poproś o wycenę",
+    "subtitle": "Chętnie odpowiemy na pytania i przygotujemy wycenę na wymiar.",
+    "email": "Napisz e-mail",
+    "call": "Zadzwoń",
+    "whatsapp": "Napisz na WhatsApp"
+  },
+  "processSection": {
+    "eyebrow": "Jak to działa",
+    "title": "Od pomysłu do Twojego domu",
+    "subtitle": "Prosty, przejrzysty proces — od pierwszej rozmowy aż po meble dostarczone pod Twoje drzwi.",
+    "steps": {
+      "consultation": {
+        "title": "Konsultacja",
+        "description": "Opowiedz nam o swoim projekcie — wymiary, rodzaj drewna i styl, jaki masz na myśli."
+      },
+      "design": {
+        "title": "Projekt i wycena",
+        "description": "Przygotowujemy indywidualny projekt oraz przejrzystą wycenę bez zobowiązań."
+      },
+      "crafting": {
+        "title": "Wykonanie",
+        "description": "Nasi stolarze ręcznie kształtują lite drewno w Twoje meble, element po elemencie."
+      },
+      "delivery": {
+        "title": "Dostawa i montaż",
+        "description": "Dostarczamy i starannie montujemy Twoje nowe meble w domu."
+      }
+    }
+  },
+  "gallerySection": {
+    "eyebrow": "Nasze realizacje",
+    "title": "Galeria Produktów",
+    "subtitle": "Zobacz nasze ręcznie wykonane meble w każdej kategorii — łóżka, krzesła, stoły oraz produkty do pielęgnacji.",
+    "categories": {
+      "beds": "Łóżka",
+      "chairs": "Krzesła",
+      "tables": "Stoły",
+      "furnitureCare": "Produkty do pielęgnacji mebli"
+    },
+    "empty": "Zdjęcia wkrótce."
+  },
+  "language": {
+    "switch": "Zmień język"
+  }
+}

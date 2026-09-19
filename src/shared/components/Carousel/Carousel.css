@@ -1,0 +1,117 @@
+.carousel {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--color-navy-600);
+  outline: none;
+}
+
+.carousel:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.carousel__viewport {
+  position: relative;
+  width: 100%;
+  height: clamp(320px, 55vw, 520px);
+  overflow: hidden;
+  background: var(--color-navy-600);
+}
+
+.carousel__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  animation: carousel-fade-in 0.4s ease;
+}
+
+@keyframes carousel-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__image {
+    animation: none;
+  }
+}
+
+.carousel__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-pill);
+  background: rgba(11, 27, 52, 0.55);
+  color: var(--color-cream-200);
+  backdrop-filter: blur(2px);
+  transition:
+    background var(--transition),
+    transform var(--transition);
+}
+
+.carousel__control svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.carousel__control:hover {
+  background: var(--interactive);
+  color: var(--interactive-fg);
+}
+
+.carousel__control:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.carousel__control--prev {
+  left: 0.75rem;
+}
+
+.carousel__control--next {
+  right: 0.75rem;
+}
+
+.carousel__counter {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(11, 27, 52, 0.55);
+  color: var(--color-cream-200);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 560px) {
+  .carousel__viewport {
+    height: clamp(240px, 75vw, 360px);
+  }
+
+  .carousel__control {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .carousel__control svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}

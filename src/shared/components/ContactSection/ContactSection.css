@@ -1,0 +1,265 @@
+.contact-section {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  background: var(--brand-primary);
+  color: var(--text-on-dark);
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at bottom,
+    var(--color-navy-400) 0%,
+    transparent 60%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.contact-section__inner {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.contact-section__intro {
+  text-align: center;
+  max-width: 56ch;
+  margin: 0 auto;
+}
+
+.contact-section__eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--interactive);
+  margin-bottom: 0.75rem;
+}
+
+.contact-section__title {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  color: var(--color-cream-200);
+  margin-bottom: 0.6rem;
+}
+
+.contact-section__subtitle {
+  color: var(--text-on-dark);
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-section__content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* ---------- Email banner ---------- */
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  color: var(--text-on-dark);
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition);
+}
+
+.contact-email:hover {
+  border-color: var(--interactive);
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-2px);
+}
+
+.contact-email:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.contact-email__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: var(--radius-pill);
+  background: var(--interactive);
+  color: var(--interactive-fg);
+}
+
+.contact-email__icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.contact-email__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.contact-email__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--interactive);
+}
+
+.contact-email__value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-cream-200);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- People grid ---------- */
+
+.contact-people {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.contact-person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-person:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-person__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-primary);
+  color: var(--interactive);
+  border: 2px solid var(--interactive);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.contact-person__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.contact-person__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.contact-person__phone {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.contact-person__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.contact-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
+  transition:
+    transform var(--transition),
+    filter var(--transition);
+}
+
+.contact-action svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.contact-action:hover {
+  transform: scale(1.08);
+  filter: brightness(1.08);
+}
+
+.contact-action:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.contact-action--call {
+  background: var(--brand-primary);
+}
+
+.contact-action--whatsapp {
+  background: var(--color-success);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .contact-section__inner {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .contact-email {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-person {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-person__info {
+    align-items: center;
+    flex-basis: 100%;
+  }
+
+  .contact-person__actions {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}

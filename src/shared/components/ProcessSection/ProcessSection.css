@@ -1,0 +1,157 @@
+.process-section {
+  position: relative;
+  scroll-margin-top: 4.5rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.process-section__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4.5rem 1.25rem;
+}
+
+.process-section__intro {
+  text-align: center;
+  max-width: 56ch;
+  margin: 0 auto 3.5rem;
+}
+
+.process-section__eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--interactive-hover);
+  margin-bottom: 0.75rem;
+}
+
+.process-section__title {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.process-section__subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- Steps timeline ---------- */
+
+.process-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  counter-reset: process-step;
+}
+
+.process-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/* Connecting line runs through the icon markers, between step 1 and step 4 */
+.process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 2.25rem;
+  left: calc(50% + 2.25rem);
+  width: calc(100% - 2.5rem);
+  height: 2px;
+  background: var(--border-subtle);
+}
+
+.process-step__marker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand-primary);
+  color: var(--interactive);
+  border: 2px solid var(--interactive);
+  margin-bottom: 1.25rem;
+  z-index: 1;
+}
+
+.process-step__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.process-step__number {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--interactive);
+  color: var(--interactive-fg);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.process-step__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.process-step__description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  max-width: 22ch;
+}
+
+/* ---------- CTA ---------- */
+
+.process-section__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  .process-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .process-section__inner {
+    padding: 3rem 1rem;
+  }
+
+  .process-section__intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}

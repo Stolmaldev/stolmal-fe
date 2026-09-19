@@ -1,0 +1,85 @@
+/**
+ * Stolmal Format — Design Tokens
+ * SINGLE SOURCE OF TRUTH for colors, spacing, radius, shadows, motion.
+ * All components MUST consume these via var(--token). Never hard-code colors.
+ *
+ * Palette derived from the brand logo (navy + antique gold, natural & precise):
+ *   - Navy   #0B1B34  brand / dark surfaces
+ *   - Gold   #C9A24B  single interactive color (buttons, links, focus)
+ *   - Cream  #F5EFE0  light surface / page background
+ *   - Ink    #1A1A1A  body text
+ */
+
+:root {
+  /* ---------- Brand core ---------- */
+  --color-navy: #0b1b34;
+  --color-navy-600: #12274a;
+  --color-navy-400: #223a63;
+  --color-navy-200: #4a628a;
+
+  --color-gold: #c9a24b;
+  --color-gold-600: #b28a35;
+  --color-gold-400: #d8b76a;
+  --color-gold-200: #ecdcae;
+
+  --color-cream: #f5efe0;
+  --color-cream-600: #ebe3cf;
+  --color-cream-200: #fbf7ec;
+
+  --color-ink: #1a1a1a;
+  --color-ink-600: #3a3a3a;
+  --color-ink-400: #6b6b6b;
+  --color-ink-200: #a8a8a8;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Feedback (kept neutral, harmonized with palette) */
+  --color-success: #4a7c59;
+  --color-warning: #d99a2b;
+  --color-danger: #b3453a;
+
+  /* ---------- Semantic aliases (use these in components) ---------- */
+  --bg-page: var(--color-cream);
+  --bg-surface: var(--color-white);
+  --bg-surface-alt: var(--color-cream-600);
+  --bg-inverse: var(--color-navy);
+
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-600);
+  --text-muted: var(--color-ink-400);
+  --text-on-dark: var(--color-cream-200);
+  --text-on-accent: var(--color-navy);
+
+  --brand-primary: var(--color-navy);
+  --brand-accent: var(--color-gold);
+
+  /* All clickable elements use ONE color: gold. */
+  --interactive: var(--color-gold);
+  --interactive-hover: var(--color-gold-600);
+  --interactive-active: var(--color-gold-400);
+  --interactive-disabled: var(--color-ink-200);
+  --interactive-fg: var(--color-navy);
+
+  --border-subtle: rgba(11, 27, 52, 0.12);
+  --border-strong: rgba(11, 27, 52, 0.32);
+  --focus-ring: rgba(201, 162, 75, 0.55);
+
+  /* Back-compat alias */
+  --white: var(--color-white);
+
+  /* ---------- Shape ---------- */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* ---------- Elevation ---------- */
+  --shadow-sm: 0 1px 2px rgba(11, 27, 52, 0.08);
+  --shadow: 0 4px 16px rgba(11, 27, 52, 0.12);
+  --shadow-lg: 0 12px 32px rgba(11, 27, 52, 0.18);
+
+  /* ---------- Motion ---------- */
+  --transition: 0.22s ease;
+  --transition-slow: 0.35s ease;
+}

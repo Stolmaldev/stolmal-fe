@@ -1,0 +1,128 @@
+.footer {
+  background: var(--brand-primary);
+  color: var(--text-on-dark);
+  margin-top: auto;
+  border-top: 3px solid var(--interactive);
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.footer__brand {
+  font-size: 1.25rem;
+  color: var(--interactive);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.footer__about {
+  color: var(--text-on-dark);
+  opacity: 0.85;
+  max-width: 42ch;
+}
+
+.footer__heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--interactive);
+  margin-bottom: 0.75rem;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__link {
+  color: var(--text-on-dark);
+  transition: color var(--transition);
+}
+
+.footer__link:hover {
+  color: var(--interactive);
+}
+
+.footer__link:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.footer__contact {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.footer__contact-name {
+  font-weight: 600;
+  color: var(--text-on-dark);
+  opacity: 0.85;
+}
+
+.footer__muted {
+  color: var(--text-on-dark);
+  opacity: 0.7;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.25rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-on-dark);
+  opacity: 0.75;
+}
+
+@media (max-width: 960px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1.5rem;
+  }
+
+  .footer__col:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1.25rem 1.5rem;
+    text-align: center;
+  }
+
+  .footer__col:first-child {
+    grid-column: auto;
+  }
+
+  .footer__about {
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  .footer__list {
+    align-items: center;
+  }
+
+  .footer__contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .footer__bottom {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}

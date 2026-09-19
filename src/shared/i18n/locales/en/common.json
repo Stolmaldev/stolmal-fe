@@ -1,0 +1,72 @@
+{
+  "brand": {
+    "name": "Stolmal Format",
+    "tagline": "Nature and precision"
+  },
+  "common": {
+    "orderNow": "Order now"
+  },
+  "nav": {
+    "home": "Home",
+    "process": "How It Works",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Wooden furniture crafted with passion",
+    "subtitle": "Tables, chairs and bespoke furniture — from solid wood, hand-finished in our workshop.",
+    "cta": "See our work"
+  },
+  "footer": {
+    "about": "Stolmal Format — a joinery workshop specialising in solid wood furniture: tables, chairs and bespoke pieces.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "contactSection": {
+    "eyebrow": "Contact us",
+    "title": "Get in touch",
+    "subtitle": "We're happy to answer questions and prepare a custom quote.",
+    "email": "Send an email",
+    "call": "Call",
+    "whatsapp": "Message on WhatsApp"
+  },
+  "processSection": {
+    "eyebrow": "How it works",
+    "title": "From idea to your home",
+    "subtitle": "A simple, transparent process — from the first conversation to furniture delivered to your door.",
+    "steps": {
+      "consultation": {
+        "title": "Consultation",
+        "description": "Tell us about your project — dimensions, wood species and style you have in mind."
+      },
+      "design": {
+        "title": "Design & quote",
+        "description": "We prepare a tailored design and a transparent, no-obligation quote."
+      },
+      "crafting": {
+        "title": "Handcrafting",
+        "description": "Our craftsmen shape solid wood into your furniture, piece by piece."
+      },
+      "delivery": {
+        "title": "Delivery & setup",
+        "description": "We deliver and carefully set up your new furniture at home."
+      }
+    }
+  },
+  "gallerySection": {
+    "eyebrow": "Our work",
+    "title": "Product Gallery",
+    "subtitle": "Browse our handcrafted furniture across every category — beds, chairs, tables and care products.",
+    "categories": {
+      "beds": "Beds",
+      "chairs": "Chairs",
+      "tables": "Tables",
+      "furnitureCare": "Furniture care products"
+    },
+    "empty": "Photos coming soon."
+  },
+  "language": {
+    "switch": "Change language"
+  }
+}
