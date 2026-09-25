@@ -66,6 +66,25 @@
     },
     "empty": "Photos coming soon."
   },
+  "testimonialsSection": {
+    "eyebrow": "Customer reviews",
+    "subtitle": "Real reviews shared by our customers on Facebook and Allegro.",
+    "showMore": "Read more",
+    "showLess": "Show less",
+    "source": {
+      "facebook": "Facebook review",
+      "allegro": "Allegro review"
+    },
+    "items": {
+      "ania": "I wholeheartedly recommend Stolmalformat — we received a gorgeous, solid table that fits our interior perfectly. They helped us choose the right colour, something that was very hard to get elsewhere. Fast delivery.",
+      "zimneserce": "I'll admit I had some doubts before buying, since the company had no reviews on Allegro yet. Fortunately, talking with Mr. Michał resolved them completely! He described the table thoroughly and patiently answered every question. And the table itself... amazing! Top-quality craftsmanship, and the velvety tabletop finish feels and looks incredible in person. Thank you so much — highly recommended!",
+      "budmar": "I recommend Mr. Michał — truly top-notch 💪 You can tell he has years of experience.",
+      "iwonaFacebook": "I warmly recommend Stolmalformat — the oak bed we bought looks even better in person than in the photos. A beautiful piece of furniture that definitely met our expectations 😊 Solidly built, great contact with the seller, fast shipping, plus the guys helped carry it in and assemble it. We're very happy with the purchase — both the looks and the quality. Thanks also for the nice gift from the company 😊 We'll definitely recommend your services to everyone 👌"
+    }
+  },
+  "social": {
+    "facebook": "Follow us on Facebook"
+  },
   "language": {
     "switch": "Change language"
   }

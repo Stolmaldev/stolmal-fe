@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { NAV_ITEMS } from '../../config/navigation';
 import { CONTACT_INFO } from '../../config/contactInfo';
+import FacebookLink from '../FacebookLink';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -51,6 +52,7 @@ const Footer: React.FC = () => {
             ))}
             <li className="footer__muted">{CONTACT_INFO.address}</li>
           </ul>
+          <FacebookLink className="footer__facebook" />
         </div>
       </div>
 

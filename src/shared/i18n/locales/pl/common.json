@@ -66,6 +66,25 @@
     },
     "empty": "Zdjęcia wkrótce."
   },
+  "testimonialsSection": {
+    "eyebrow": "Opinie klientów",
+    "subtitle": "Prawdziwe opinie naszych klientów z Facebooka i Allegro.",
+    "showMore": "Zobacz więcej",
+    "showLess": "Zwiń",
+    "source": {
+      "facebook": "Opinia z Facebooka",
+      "allegro": "Opinia z Allegro"
+    },
+    "items": {
+      "ania": "Z całego serca polecam firmę Stolmalformat, otrzymaliśmy przepiękny, solidny stół, który idealnie pasuje do naszego wnętrza. Otrzymaliśmy pomoc w doborze koloru, o którą było bardzo trudno w innych firmach. Szybka dostawa.",
+      "zimneserce": "Przyznaję, że na początku miałam pewne obawy przed zakupem, ponieważ firma nie miała jeszcze żadnych opinii na Allegro. Na szczęście kontakt z Panem Michałem rozwiał je w 100%! Bardzo rzetelnie i profesjonalnie opowiedział o stole, cierpliwie odpowiadając na wszystkie pytania. A sam stół... rewelacja! Wykonanie na najwyższym poziomie, a ta aksamitna powłoka blatu robi niesamowite wrażenie w dotyku i na żywo. Bardzo dziękuję i gorąco polecam każdemu!",
+      "budmar": "Polecam Pana Michała, naprawdę topka 💪 Widać lata doświadczenia.",
+      "iwonaFacebook": "Serdecznie polecam firmę Stolmalformat, łóżko dębowe które kupiliśmy na żywo prezentuje się jeszcze lepiej niż na zdjęciach. Piękny mebel, który zdecydowanie spełnił nasze oczekiwania 😊 Solidnie wykonane, świetny kontakt ze sprzedającym, szybka wysyłka, plus Panowie służyli pomocą z wniesieniem i montażem. Jesteśmy bardzo zadowoleni z zakupu – zarówno z wyglądu, jak i jakości wykonania. Dziękujemy też za praktyczny upominek od firmy 😊 Państwa usługi na pewno będziemy polecać każdemu 👌"
+    }
+  },
+  "social": {
+    "facebook": "Odwiedź nas na Facebooku"
+  },
   "language": {
     "switch": "Zmień język"
   }

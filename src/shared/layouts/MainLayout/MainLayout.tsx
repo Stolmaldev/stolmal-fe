@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import GallerySection from '../../components/GallerySection';
 import ProcessSection from '../../components/ProcessSection';
 import ContactSection from '../../components/ContactSection';
+import TestimonialsSection from '../../components/TestimonialsSection';
 import Footer from '../../components/Footer';
 import './MainLayout.css';
 
@@ -45,6 +46,7 @@ const MainLayout: React.FC = () => {
       <GallerySection />
       <ProcessSection />
       <ContactSection />
+      <TestimonialsSection />
       <Footer />
     </div>
   );
